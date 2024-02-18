@@ -4,6 +4,7 @@ import styles from './TopBar.module.css';
 import { IsLoggedInStateContext } from '../../context/IsLoggedInStateContext';
 
 export function TopBar() {
+	// pobieramy dane o zalogowaniu z kontekstu
 	const [isLoggedIn, setIsLoggedIn] = useContext(IsLoggedInStateContext);
 
 	return (

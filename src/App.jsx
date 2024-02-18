@@ -16,6 +16,7 @@ function App() {
 		(recipe) => recipe.id === selectedRecipeId
 	);
 
+	// Do kontekstu przekazujemy tablicę, w której pierwszym elementem jest wartość, a drugim setter tej wartości. Dzięki temu, że przekazujemy tablicę, możemy użyć destrukturyzacji w komponentach, które korzystają z kontekstu.
 	return (
 		<>
 			<IsLoggedInStateContext.Provider value={[isLoggedIn, setIsLoggedIn]}>
